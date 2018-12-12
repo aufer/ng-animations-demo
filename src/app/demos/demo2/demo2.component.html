@@ -1,0 +1,9 @@
+<p>Dynamic list with fancy animations</p>
+
+<button (click)="add()">Add</button>
+<button (click)="remove()">Remove</button>
+
+<ul [@listLengthTrigger]="items.length">
+  <li *ngFor="let i of items">{{i}}</li>
+</ul>
+

@@ -1,0 +1,5 @@
+<div [@myTrigger]="temperature">
+  It's getting {{temperature}} in here!
+</div>
+
+<button (click)="temperature = temperature === 'hot' ? 'cold' : 'hot'">Temperature switch</button>
